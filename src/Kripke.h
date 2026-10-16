@@ -32,7 +32,6 @@
 #endif
 
 #if defined(KRIPKE_USE_UMPIRE)
-#define DEBUG
 #include <umpire/Umpire.hpp>
 #include <umpire/strategy/QuickPool.hpp>
 #ifdef KRIPKE_USE_DIRECT_UMPIRE_PLANE_STORAGE
@@ -41,7 +40,6 @@
 #if defined(KRIPKE_USE_CHAI)
 #include <chai/ManagedArray.hpp>
 #endif
-#undef DEBUG
 #endif
 
 // Forward Decl

@@ -402,8 +402,8 @@ namespace Core {
         RAJA::synchronize<RAJA::hip_synchronize>();
 #endif
       }
-#endif
-#endif
+#endif  // !KRIPKE_USE_CHAI
+#endif  // KRIPKE_USE_UMPIRE
 
       Kripke::Core::Set const *m_set;
       std::vector<size_t> m_chunk_to_size;
